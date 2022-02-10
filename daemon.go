@@ -1,7 +1,6 @@
 package daemonize
 
 import (
-	"log"
 	"os"
 	"os/exec"
 	"errors"
