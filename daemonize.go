@@ -7,7 +7,7 @@ import (
 	"errors"
 )
 
-func Cmd(inp exec.Cmd) errors.Error {
+func New(inp exec.Cmd) errors.Error {
 	inp.Stdout = os.Stdout
 	err := inp.Start()
 	if err != nil {
