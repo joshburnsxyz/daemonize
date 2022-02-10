@@ -17,3 +17,11 @@ func (d *Daemon) Start() errors.Error {
 	}
 	return nil
 }
+
+func (d *Daemon) Kill() errors.Error {
+	err := d.Cmd.Process.Kill()
+	if err != nil {
+		return err
+	}
+	return nil
+}
