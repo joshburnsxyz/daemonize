@@ -1,11 +1,5 @@
 package daemonize
 
-import (
-	"os"
-	"os/exec"
-	"errors"
-)
-
 type Daemon struct {
 	Cmd exec.Cmd
 }
