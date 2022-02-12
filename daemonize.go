@@ -3,10 +3,9 @@ package daemonize
 import (
 	"os"
 	"os/exec"
-	"errors"
 )
 
-func KillByPid(pid int) errors.Error {
+func KillByPid(pid int) error {
 	killcmd := exec.Command("kill", string(pid))
 	killcmd.Stdout = os.Stdout
 	err := killcmd.Wait()
