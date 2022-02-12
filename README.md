@@ -4,7 +4,7 @@ Launch and manage daemons in Go
 ## Installation
 
 ```console
-$ go get github.com/joshburnsxyz/go-daemonize
+$ go get github.com/joshburnsxyz/daemonize
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ package main
 import (
   "os/exec"
   "log"
-  "github.com/joshburnsxyz/go-daemonize"
+  "github.com/joshburnsxyz/daemonize"
 )
 
 func main() {
